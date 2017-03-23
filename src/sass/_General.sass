@@ -1,0 +1,68 @@
+// Child Level 1: Left, Main, Right
+// Child Level 2: Children of Left, Main, Right (Home, etc)
+// Child Level 3: Children of Home, etc (HeaderHome, etc)
+
+// FONTS
+$fontSize1: 4 //vh
+$fontFamily1: 'Quicksand', sans serif
+$fontFamilyInputs: $fontFamily1
+$fontFamilyButtons: $fontFamily1
+$fontFamilyLevels: $fontFamily1
+$fontDivButtons: $fontFamily1
+
+// COLORS
+$whiteTransparent: rgba(255,255,255,.4)
+$color1: gold
+$color2: azure
+$color3: lime
+$border1: 2px solid rgba(0,0,255,.1)
+
+$verticalSeparation1: 5
+$childLevel3Padding: 1 //vh
+
+
+%wideElements
+    display: block
+    width: 90%
+    margin: 0px auto
+    
+%unitElements
+    // Elements on one line: input, button
+    padding: 3px
+    
+%anyButton
+    background-color: $color1
+
+%anyButton:active
+    background-color: white    
+    
+h2
+    font-size: $fontSize1 * 1vh
+    margin: 0px
+
+.divButton
+    @extend %wideElements
+    @extend %unitElements
+    @extend %anyButton
+    font-family: $fontFamilyButtons
+    font-size: $fontSize1 * 1vh
+    border-radius: 10px
+    border: $border1
+    text-align: center
+
+.divButton:active
+    @extend %anyButton:active
+
+.inputOneLine
+    @extend %wideElements
+    @extend %unitElements
+    font-family: $fontFamilyInputs
+    font-size: $fontSize1 * 1vh
+    border-radius: 10px
+    border: $border1
+    text-align: left
+    background-color: rgba(255,255,255,.1)
+    
+.NoSee
+    display: none
+    

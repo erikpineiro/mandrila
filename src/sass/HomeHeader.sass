@@ -1,0 +1,50 @@
+@import General
+
+// ----------
+// HEADER
+.HomeHeader
+    padding: $childLevel3Padding * 1vh
+    background-color: $whiteTransparent
+
+.LogSignHeader
+    display: flex
+    
+.LogSignButton
+    @extend .divButton
+    flex: 1    
+    margin: 0 2px
+    font-size: ($fontSize1 * .6) * 1vh
+    
+.LoggedInHeader>button
+    float: right
+
+
+// FORMS
+%allForms
+    overflow-y: hidden
+    input
+        @extend .inputOneLine
+        margin-top: 1vh
+    input[type="submit"]
+        display: none
+    .divButton
+        margin-top: 4vh
+    
+.LoginFormHide
+    @extend %allForms
+    height: 0px
+    transition: height .5s
+    
+.LoginFormShow
+    @extend .LoginFormHide
+    height: 50vh
+    transition: height 1s
+//    border: $border1
+//    padding: 10px
+
+    
+.SignupForm
+    @extend %allForms
+
+    
+    

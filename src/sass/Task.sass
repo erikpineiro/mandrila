@@ -1,0 +1,34 @@
+@import General
+
+.Statement
+    display: flex
+    border: 1px solid black
+    margin-top: 1px
+    
+.StatementContent
+    flex: 6
+    padding: 3px
+    
+.StatementFlag
+    flex: 1
+    display: flex
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+    text-align: center
+    background-color: yellow
+    font-weight: normal
+
+.StatementFlagOn
+    @extend .StatementFlag
+    background-color: white
+    font-weight: bold
+    
+.StatementSumbittedCorrect
+    background-color: green
+    
+.StatementSumbittedIncorrect
+    background-color: red
+
+.StatementSumbittedNotAnswered
+    background-color: grey

@@ -1,0 +1,113 @@
+@import General
+
+// ----------
+// GET TASKS
+
+.GetTaskAnyLevel
+    padding: 1vw
+
+.GetTaskAnyLevelButtonsContainer
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+        
+%GetLevelButton
+    @extend %anyButton
+    text-align: center
+
+%GetLevelButton:active
+    @extend %anyButton:active
+
+.GetYourLevelButton
+    @extend %GetLevelButton
+    @extend .divButton
+    font-size: $fontSize1 * 1vh
+
+.GetAnyLevelButton
+    @extend %GetLevelButton
+    font-size: ($fontSize1*.7) * 1vh
+    width: (1/5.5) * 100%
+    height: (1/10) * 100vh
+    background-color: $color1
+    border: 1px solid black
+    display: flex
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+    text-align: center
+        
+    
+.GetAnyLevelButtonCurrent
+    @extend .GetAnyLevelButton
+    font-weight: bold
+
+    
+    
+    
+// ----------
+// LATEST
+.InitialInfo
+    padding: 1vh
+    font-size: $fontSize1 * 1vh
+    text-align: center
+    
+    
+// ----------
+// LATEST
+$heightLatest: (1/12)*100 // of vh
+
+.LatestOwn
+    @extend %wideElements
+    font-family: 'Quicksand', sans-serif;
+    display: flex
+    flex-direction: row
+    padding: 3px
+    border: 1px solid grey
+    background-color: rgba(255,255,255,0.5)
+        
+.OneLatest
+    position: relative //To position level
+    flex: 1
+    margin: 0px 1px
+    background-color: white
+
+.LevelInLatest
+    position: relative
+    display: flex
+    z-index: 10
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    p
+        margin: 0
+        padding: 0
+        text-align: center
+        font-family: 'Quicksand', sans-serif;
+        font-size: $heightLatest * 1vh
+
+.ResultsInLatest
+    position: absolute
+    top: 0
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between;
+    z-index: 1
+    height: 100%
+
+%oneResultInLatest
+    flex: 1
+    margin-top: 1px
+    
+.oneResultInLatest_Correct
+    @extend %oneResultInLatest
+    background-color: lime
+
+.oneResultInLatest_Incorrect
+    @extend %oneResultInLatest
+    background-color: pink
+
+.oneResultInLatest_NotAnswered
+    @extend %oneResultInLatest
+    background-color: lightgrey
+

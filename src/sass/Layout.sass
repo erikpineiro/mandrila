@@ -1,0 +1,29 @@
+$proportions: 9/16 // vh
+
+#Layout 
+    background-color: greenyellow
+    display: flex
+    justify-content: stretch
+    height: 100vh
+    
+
+%LayoutChild 
+    margin: 1vh
+    background-color: gold
+    padding: 0vh
+    border: 1px solid black
+
+.Left 
+    @extend %LayoutChild
+    flex-grow: 100
+    
+.Main 
+    @extend %LayoutChild
+    width: $proportions*100vh
+
+.Right 
+    @extend %LayoutChild
+    width: $proportions*100vh
+
+.VerticalSpacer
+    height: 1vh
