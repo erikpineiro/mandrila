@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g>
+        <g>
+            <rect x="0" y="0" width="800" height="500" style="fill:rgb(102,153,204);"/>
+            <rect x="220" y="10" width="570" height="480" style="fill:rgb(204,204,204);"/>
+            <g transform="matrix(0.963506,0,0,0.925299,122.569,-28.6649)">
+                <rect x="402.105" y="52.594" width="280.227" height="497.137" style="fill:rgb(235,235,235);"/>
+            </g>
+            <g transform="matrix(0.963506,0,0,0.925299,-157.431,-28.6649)">
+                <rect x="402.105" y="52.594" width="280.227" height="497.137" style="fill:rgb(235,235,235);"/>
+            </g>
+        </g>
+        <g id="User">
+            <g transform="matrix(1.29412,0,0,1.4,-54.7059,8)">
+                <rect x="50" y="80" width="170" height="50" style="fill:rgb(204,204,204);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0,73.8194)">
+                <g transform="matrix(1,0,0,1,0,7)">
+                    <text x="26.455px" y="155.323px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">@3</text>
+                </g>
+                <g transform="matrix(1,0,0,1,71.1035,162.323)">
+                    <text x="0px" y="0px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">xp 12345</text>
+                </g>
+                <g transform="matrix(1,0,0,1,200,146.727)">
+                    <text x="0px" y="15.811px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">EN</text>
+                </g>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,0,7)">
+                    <text x="26.455px" y="155.323px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">@3</text>
+                </g>
+                <g transform="matrix(1,0,0,1,71.1035,162.323)">
+                    <text x="0px" y="0px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">xp 12345</text>
+                </g>
+                <g transform="matrix(1,0,0,1,200,146.727)">
+                    <text x="0px" y="15.811px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">EN</text>
+                </g>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,45.916,109.808)">
+                    <text x="0px" y="0px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">Gondolﬁer</text>
+                </g>
+                <g transform="matrix(0.702322,0,0,0.702322,-11.0697,40.8374)">
+                    <path d="M48.443,70.081C47.348,69.973 46.245,69.973 45.15,70.081L44.656,72.681C43.607,72.84 42.58,73.115 41.593,73.502L39.865,71.497C38.862,71.951 37.907,72.503 37.013,73.144L37.885,75.643C37.056,76.304 36.304,77.056 35.643,77.885L33.144,77.013C32.503,77.907 31.951,78.862 31.497,79.865L33.502,81.593C33.115,82.58 32.84,83.607 32.681,84.656L30.081,85.15C29.973,86.245 29.973,87.348 30.081,88.443L32.681,88.938C32.84,89.986 33.115,91.013 33.502,92L31.497,93.729C31.951,94.731 32.503,95.686 33.144,96.58L35.643,95.709C36.304,96.537 37.056,97.289 37.885,97.951L37.013,100.45C37.907,101.091 38.862,101.642 39.865,102.096L41.593,100.092C42.58,100.478 43.607,100.753 44.656,100.912L45.15,103.513C46.245,103.62 47.348,103.62 48.443,103.513L48.938,100.912C49.986,100.753 51.013,100.478 52,100.092L53.729,102.096C54.731,101.642 55.686,101.091 56.58,100.45L55.709,97.951C56.537,97.289 57.289,96.537 57.951,95.709L60.45,96.58C61.091,95.686 61.642,94.731 62.096,93.729L60.092,92C60.478,91.013 60.753,89.986 60.912,88.938L63.513,88.443C63.62,87.348 63.62,86.245 63.513,85.15L60.912,84.656C60.753,83.607 60.478,82.58 60.092,81.593L62.096,79.865C61.642,78.862 61.091,77.907 60.45,77.013L57.951,77.885C57.289,77.056 56.537,76.304 55.709,75.643L56.58,73.144C55.686,72.503 54.731,71.951 53.729,71.497L52,73.502C51.013,73.115 49.986,72.84 48.938,72.681L48.443,70.081ZM46.797,76.315C52.581,76.315 57.278,81.012 57.278,86.797C57.278,92.581 52.581,97.278 46.797,97.278C41.012,97.278 36.315,92.581 36.315,86.797C36.315,81.012 41.012,76.315 46.797,76.315Z" style="fill:rgb(235,235,235);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,136,65)">
+                    <g transform="matrix(0.6,0,0,0.6,24,14)">
+                        <circle cx="55" cy="35" r="5" style="fill:rgb(51,51,51);"/>
+                    </g>
+                    <g transform="matrix(0.6,0,0,0.6,32,14)">
+                        <circle cx="55" cy="35" r="5" style="fill:rgb(51,51,51);"/>
+                    </g>
+                    <g transform="matrix(0.6,0,0,0.6,40,14)">
+                        <circle cx="55" cy="35" r="5" style="fill:rgb(51,51,51);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g id="Settings">
+        <g id="EditLanguages">
+            <g transform="matrix(1,0,0,1,169.036,50.7442)">
+                <text x="77.84px" y="42.01px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:none;">Reading these languages</text>
+                <text x="77.84px" y="42.01px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">Reading these languages</text>
+            </g>
+            <g transform="matrix(1,0,0,1,169.036,314.778)">
+                <text x="77.84px" y="42.01px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:none;">App language:</text>
+                <text x="77.84px" y="42.01px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;">App language:</text>
+            </g>
+            <rect x="240" y="110" width="250" height="140" style="fill:rgb(0,153,102);stroke:rgb(0,153,102);stroke-width:2px;"/>
+            <g transform="matrix(1,0,0,1,2.84217e-14,-150)">
+                <rect x="240" y="260" width="250" height="40" style="fill:rgb(255,255,102);stroke:rgb(235,235,235);stroke-width:1px;"/>
+                <g transform="matrix(1,0,0,1,11.4342,-36.1449)">
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:none;">(EN) ENGLIS</text>
+                    <text x="394.315px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:none;">H</text>
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:rgb(51,51,51);">(EN) ENGLIS</text>
+                    <text x="394.315px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:rgb(51,51,51);">H</text>
+                </g>
+                <g transform="matrix(1,0,0,1,20,-72.0772)">
+                    <g transform="matrix(0.623496,0,0,0.623496,153.774,323.149)">
+                        <circle cx="475.105" cy="46.396" r="16.039" style="fill:rgb(255,102,102);stroke:rgb(235,235,235);stroke-width:1.6px;"/>
+                    </g>
+                    <g transform="matrix(0.623496,0,0,0.623496,193.303,252.086)">
+                        <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:none;">X</text>
+                        <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:rgb(51,51,51);">X</text>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,2.84217e-14,-110)">
+                <rect x="240" y="260" width="250" height="40" style="fill:rgb(255,255,102);stroke:rgb(235,235,235);stroke-width:1px;"/>
+                <g transform="matrix(1,0,0,1,11.4342,-36.1449)">
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:none;">(ES) ESP<tspan x="362.909px 375.097px " y="326.1px 326.1px ">AÑ</tspan>OL</text>
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:rgb(51,51,51);">(ES) ESP<tspan x="362.909px 375.097px " y="326.1px 326.1px ">AÑ</tspan>OL</text>
+                </g>
+                <g transform="matrix(1,0,0,1,20,-72.0772)">
+                    <g transform="matrix(0.623496,0,0,0.623496,153.774,323.149)">
+                        <circle cx="475.105" cy="46.396" r="16.039" style="fill:rgb(255,102,102);stroke:rgb(235,235,235);stroke-width:1.6px;"/>
+                    </g>
+                    <g transform="matrix(0.623496,0,0,0.623496,193.303,252.086)">
+                        <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:none;">X</text>
+                        <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:rgb(51,51,51);">X</text>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect x="240" y="260" width="250" height="40" style="fill:rgb(255,255,102);stroke:rgb(235,235,235);stroke-width:1px;"/>
+                <g transform="matrix(1,0,0,1,-16.5658,-36.1449)">
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:none;">ADD L<tspan x="340.093px 352.28px " y="326.1px 326.1px ">AN</tspan>GUAGE</text>
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:rgb(51,51,51);">ADD L<tspan x="340.093px 352.28px " y="326.1px 326.1px ">AN</tspan>GUAGE</text>
+                </g>
+                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,873.704,619.704)">
+                    <path d="M407.852,330L415.704,345.704L400,345.704L407.852,330Z" style="fill:rgb(255,102,102);"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,2.84217e-14,110)">
+                <rect x="240" y="260" width="250" height="40" style="fill:rgb(255,255,102);stroke:rgb(235,235,235);stroke-width:1px;"/>
+                <g transform="matrix(1,0,0,1,-16.5658,-36.1449)">
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:none;">ENGLISH</text>
+                    <text x="287.417px" y="326.1px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:24px;fill:rgb(51,51,51);">ENGLISH</text>
+                </g>
+                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,873.704,619.704)">
+                    <path d="M407.852,330L415.704,345.704L400,345.704L407.852,330Z" style="fill:rgb(255,102,102);"/>
+                </g>
+            </g>
+        </g>
+        <g>
+            <circle cx="475.105" cy="46.396" r="16.039" style="fill:rgb(0,153,102);stroke:rgb(235,235,235);stroke-width:1px;"/>
+            <g transform="matrix(1,0,0,1,63.3984,-113.977)">
+                <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:none;">X</text>
+                <text x="406.976px" y="167.703px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:20px;fill:rgb(51,51,51);">X</text>
+            </g>
+        </g>
+    </g>
+</svg>
