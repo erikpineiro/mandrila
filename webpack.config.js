@@ -7,7 +7,6 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/client.js",
   publicPath: "http://localhost:8080/src/",
-
   
   module: {
     loaders: [

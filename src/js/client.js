@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Layout from "./components/Layout";
+import Layout from "./components/app/Layout";
 
 var urlElements = {};
 

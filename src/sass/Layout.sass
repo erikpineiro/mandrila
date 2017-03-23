@@ -1,11 +1,13 @@
 $proportions: 9/16 // vh
+$wMax: 400 //px
+$hMax: $wMax/$proportions
+$wMinLeft: 200 // px
 
 #Layout 
     background-color: greenyellow
     display: flex
     justify-content: stretch
     height: 100vh
-    
 
 %LayoutChild 
     margin: 1vh
@@ -17,13 +19,17 @@ $proportions: 9/16 // vh
     @extend %LayoutChild
     flex-grow: 100
     
-.Main 
+.Mid 
     @extend %LayoutChild
     width: $proportions*100vh
+    max-width: $wMax * 1px
+    max-height: $hMax * 1px
 
 .Right 
     @extend %LayoutChild
     width: $proportions*100vh
+    max-width: 400px
+    max-height: $hMax * 1px
 
 .VerticalSpacer
     height: 1vh
