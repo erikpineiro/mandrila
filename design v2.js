@@ -34,7 +34,7 @@ State and Reducers {
 
 		EXERCISE_CLOSE() : showing = "Home"
 		EXERCISE_BYID_REVIEW_PENDING() : showing = "Drill"
-		EXERCISE_BYLEVEL_DRILL_PENDING() : showing = "Drill"
+		EXERCISE_GETBYLEVEL_DRILL_PENDING() : showing = "Drill"
 
 		RACE_CLOSE() : showing="Home"
 		RACE_GETBYID_REVIEW_PENDING(level) : showing = "Race"
@@ -45,7 +45,6 @@ State and Reducers {
 		USER_LOGIN_OPEN(), showing = "Login"
 		USER_LOGOUT(), showing = "NoUser"
 		USER_SIGNUP_OPEN(), showing = "NoUser"
-
 
 	home: //
 		dbStatus
@@ -153,10 +152,10 @@ State and Reducers {
 		EXERCISE_GETBYID_REVIEW_FULFILLED(response) : dbStatus="reviewByID_Fulfilled"
 		EXERCISE_BYID_REVIEW_CLOSE() : readingID=null, dbStatus=""
 
-		EXERCISE_BYLEVEL_DRILL_PENDING(level) : reset(), dbStatus="drillByLevel_Pending"
-		EXERCISE_BYLEVEL_DRILL_REJECTED(error) : dbStatus="drillByLevel_Rejected"
+		EXERCISE_GETBYLEVEL_DRILL_PENDING(level) : reset(), dbStatus="drillByLevel_Pending"
+		EXERCISE_GETBYLEVEL_DRILL_REJECTED(error) : dbStatus="drillByLevel_Rejected"
 		EXERCISE_GETBYLEVEL_DRILL_FULFILLED(response) : readingID, dbStatus="drillByLevel_Fullfilled"
-		EXERCISE_BYLEVEL_DRILL_CLOSE() : readingID=null, dbStatus=""		
+		EXERCISE_GETBYLEVEL_DRILL_CLOSE() : readingID=null, dbStatus=""		
 
 		READING_RATE_PENDING(rating) : done=true, dbStatus="done_Pending"
 		READING_RATE_REJECTED() : dbStatus="done_Rejected"
@@ -239,6 +238,7 @@ State and Reducers {
 	races: 
 		key: value
 		RACE_GETBYID_REVIEW_FULFILLED(response) : //update corresponding key with response (must include raceID)
+		USER_LOGIN_FULFILLED
 		USER_LOGOUT(): // Remove all properties
 
 	readings: 
@@ -259,6 +259,19 @@ State and Reducers {
 																													// But we need not change the State for that. If there are internet problems,
 																													// we'll catch them when trying to update the opponents (RACE_PUT_OPPONENTS_REJECTED and RACE_PUT_OPPONENTS_FULFILLED)
 		USER_LOGOUT(): // Remove all properties		
+
+	drills:
+		key: value
+		USER_LOGIN_FULFILLED
+		USER_LOGOUT(): // Remove all properties
+
+
+	languages:
+		key: value
+		USER_LOGIN_FULFILLED
+		USER_LOGOUT(): // Remove all properties
+
+
 }
 
 Classes {
@@ -267,21 +280,30 @@ Classes {
 		fetching
 		lastUpdated
 	}
-	drill: {
+	Drill: {
 		reading
 	}
-	exercise: {
+	Exercise: {
+		// DB
+		contents
 		exerciseID
+		level
+		levelAnchor
+		nextExercise // if there is one (exerciseID)
+		previousExercise // if there is one (exerciseID)
 		reports // Array of report
+		creatorID // userID
+		// LOCAL
 		scene
 		statements // aray of oneSatement
-		userID // Creator
 	}
-	language: {
-		dbStatus
+	Language: {
 		clase
+		events // concat of races & drills
+		races // Array of raceIDs
+		drills // Array of drillIDs
+		langCode
 		xps
-		events // Array of readingID and raceID
 	}
 	statement: {
 		statement
@@ -309,7 +331,7 @@ Classes {
 		scene // duplicated from exercise. To show in home-page
 		results: [] //1: correct, 0: incorrect, -1:not answered
 		userClase // @dateTime
-		exerciseClase // @dateTime
+		exerciseLevel // @dateTime
 		xpsReading // made on the reading (as opposed to xpsRace)
 		dateTime
 		wasRace // raceID if it was a race (non-ortogonal) (useful for future SQL queries)
@@ -329,6 +351,7 @@ Classes {
 		userID // Reporter
 	}
 	user: {		
+		// DB
 		userID
 		clave
 		alias
@@ -555,9 +578,43 @@ Layout {
 
 // FOLDER STRUCTURE
 src
-	
-	Functions {}
-	Reducers {}
+	js {
+		actions {}
+		reducers {}
+		components {
+			Layout
+				Left
+				Mid
+				Right
+			Home
+				Home
+				EventList
+				Events
+					DrillEvent
+						EventBodyDrill
+						ResultsDrillEvent
+					RaceEvent
+						EventBodyRace
+						ResultsRaceEvent
+					Common
+						XPSMade
+						LevelEvent
+						SceneIntroEvent
+						TimeSinceEvent
+				MoreEventsButton
+				DrillButtons
+					DrillButton // one for each: DrillTeacher, DrillThis, DrillAny
+				RaceButton
+				ChooseLevel
+					LevelBox
+					SampleBox
+					TextSample
+					NewSample_CancelButton
+			Drill
+			Race
+			Common
+		}
+	}
 
 	Components_SASS {
 		App

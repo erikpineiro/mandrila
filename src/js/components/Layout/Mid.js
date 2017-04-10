@@ -1,6 +1,6 @@
 import React from "react";
 
-// require('../../sass/Layout.scss');
+require('../../sass/Layout.sass');
 
 export default class Mid extends React.Component {
 

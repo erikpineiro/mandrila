@@ -1,0 +1,35 @@
+$colorMarkStatement: orange
+$colorBackStatement: white
+
+.Statement
+    padding: 2px
+    margin: 2px
+    background-color: white
+    
+.TextStatement
+    padding: 3px
+    
+.MarksStatement
+    margin: 6px 0px
+    display: flex
+    content-align: stretch
+    
+.MarkStatement
+    flex: 1
+    text-align: center
+    
+%MarkStatementText
+    padding: 3px 6px
+    border-radius: 5px
+
+.MarkStatementTextOn
+    @extend %MarkStatementText
+    border: 1px solid $colorMarkStatement
+    color: $colorBackStatement
+    background-color: $colorMarkStatement
+    
+.MarkStatementTextOff
+    @extend %MarkStatementText
+    border: 1px solid $colorMarkStatement
+    background-color: $colorBackStatement
+    color: $colorMarkStatement

@@ -1,0 +1,17 @@
+@import General
+
+%Language
+    margin: 10px 0px
+    
+    
+.LanguageOn
+    @extend %Language
+    @extend .NotClickable
+    background-color: $color2
+    
+.LanguageOff
+    @extend %Language
+    @extend .Clickable
+    background-color: $whiteTransparent
+
+    

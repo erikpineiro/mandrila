@@ -3,6 +3,25 @@
 error_reporting(-1);    // ALL MESSAGES
 ini_set('display_errors', 'On');
 
+
+// TABLE NAMES
+$table_Drills = "Drills";
+$table_Exercises = "Exercises";
+$table_Languages = "Languages";
+$table_Races = "Races";
+$table_Readings = "Readings";
+$table_Users = "Users";
+
+
+// TESTING
+if (isset($_GET['testing'])) {
+  $function = "userByID_GET";
+  require $function.'.php';
+  exit($function());
+}
+
+
+
 function openDB(){
 	try {  
 		require 'yaves.php';
@@ -56,8 +75,4 @@ function querySql($sql, $params, $DBH) {
 }
 
 
-// TABLE NAMES
-$table_Tasks = "Tasks";
-$table_Users = "Users";
-$table_Readings = "Readings";
 ?>

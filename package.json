@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "webpack.config.js",
   "dependencies": {
+    "axios": "^0.15.3",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -16,6 +17,10 @@
     "node-sass": "^4.5.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.0",
+    "redux-promise-middleware": "^4.2.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.16.3"
   },

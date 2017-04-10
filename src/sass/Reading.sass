@@ -1,0 +1,74 @@
+@import General
+
+$hReading: 5 //vh
+$hPropBodyTop: .85
+$hBodyTop: $hPropBodyTop * $hReading
+$hBodyBottom: (1 - $hPropBodyTop) * $hReading
+$wSides: 15 // %
+    
+.Reading
+    margin: 1px 2px
+    background-color: $color1
+    justify-content: stretch
+    height: $hReading * 1vh
+    font: .4 * $hReading * 1vh Helvetica
+    display: flex    
+    
+.ReadingChild
+    width: $wSides * 1%
+    text-align: center
+    p 
+        @include vertical-align();
+//    display: inline-block
+
+    
+.ReadingBody
+    width: (100 - 2 * $wSides) * 1%
+    
+.ReadingBodyTop
+    height: $hBodyTop * 1vh
+    p
+        top: .2 * $hReading * 1vh
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+
+.ReadingBodyExerciseLevel
+    display: inline-block
+    position: relative
+    width: $wSides * 1%
+    
+.ReadingBodyScene
+    display: inline-block
+    position: relative
+    white-space: nowrap
+    width: (100 - $wSides) * 1%
+    p
+        text-overflow: ellipsis
+        overflow: hidden
+
+
+.ReadingBodyResults
+    height: $hBodyBottom * 1vh
+    background-color: $color2
+    display: flex
+    justify-content: stretch
+
+%ReadingBodyResult 
+    height: 100%
+    border-left: 1px solid black
+    flex: 1
+    &:first-child
+        border-left: none
+    
+.ReadingBodyResultCorrect
+    @extend %ReadingBodyResult
+    background-color: $colorCorrect
+
+.ReadingBodyResultIncorrect
+    @extend %ReadingBodyResult
+    background-color: $colorIncorrect
+
+.ReadingBodyResultUnanswered
+    @extend %ReadingBodyResult
+    background-color: $colorUnanswered

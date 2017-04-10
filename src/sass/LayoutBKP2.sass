@@ -1,5 +1,3 @@
-@import General
-
 $proportions: 9/16 // vw
 $paddingLayout: 3 //vh
 $paddingRightContainer: 4 //vh
@@ -8,10 +6,9 @@ $hRightContainer: 100 - 2*$paddingLayout
 $hRCChild: $hRightContainer - 2*$pseudoPaddingRC
 $wMinLeft: 200 // px
 
-
 #Layout 
     padding: $paddingLayout * 1vh
-    background-color: $color1
+    background-color: greenyellow
     display: flex
     justify-content: stretch
     height: 100vh
@@ -28,19 +25,18 @@ $wMinLeft: 200 // px
 
 
 #RightContainer
-    background-color: $color2
+    background-color: blue
     @extend %LayoutChild
     height: $hRightContainer * 1vh
-    white-space: nowrap
+//    padding: $paddingRightContainer * 1vh
 
 %RCChild
-    white-space: normal
-    background-color: $color3
+    background-color: grey
     display: inline-block
-    vertical-align: top
     width: $proportions*$hRCChild*1vh
     margin: $pseudoPaddingRC * 1vh
     height: $hRCChild * 1vh
+//    border: 1px solid black
     
 .Mid 
     @extend %RCChild

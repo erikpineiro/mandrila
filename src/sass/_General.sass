@@ -14,7 +14,10 @@ $fontDivButtons: $fontFamily1
 $whiteTransparent: rgba(255,255,255,.4)
 $color1: gold
 $color2: azure
-$color3: lime
+$color3: green
+$colorCorrect: lime
+$colorIncorrect: pink
+$colorUnanswered: grey
 $border1: 2px solid rgba(0,0,255,.1)
 
 $verticalSeparation1: 5
@@ -36,8 +39,7 @@ $childLevel3Padding: 1 //vh
 %anyButton:active
     background-color: white    
     
-h2
-    font-size: $fontSize1 * 1vh
+p
     margin: 0px
 
 .divButton
@@ -65,4 +67,17 @@ h2
     
 .NoSee
     display: none
+
+.Clickable
+    cursor: pointer
     
+.NotClickable
+    cursor: default
+    
+@mixin vertical-align($position: relative) 
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
